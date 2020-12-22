@@ -1,0 +1,33 @@
+﻿@model List<CodeFirstProject.Models.Kisiler>
+@{
+    ViewBag.Title = "homepage";
+}
+<br />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Adı Soyadı</th>
+            <th>Görevi</th>
+            <th>Görev Yeri</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.personelAdSoyad</td>
+                <td>@item.Unvan.Unvan</td>
+                <td>@item.Birimler.BirimAdi</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+</ul>
